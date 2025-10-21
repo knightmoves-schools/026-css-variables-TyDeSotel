@@ -10,13 +10,15 @@
         }
         
         .narrow-text {
-           --narrow-text: width: 120px; 
+           width: var ( --narrow-text);
+            --narrow-text: width: 120px; 
             width: 150px;
             border-style: solid;
             padding: 10px;
         }
 
         .wide-text {
+            width: var ( --wide-text);
             width: 200px;
             border-style: solid;
             padding: 10px;
