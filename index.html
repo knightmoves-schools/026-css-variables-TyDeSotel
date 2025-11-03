@@ -4,8 +4,8 @@
     <title>CSS Variables</title>
     <style>
         :root {
-         --narrow-text: 150px;
-        --wide-text: 200px;
+         --narrow-text-size: 150px;
+        --wide-text-size: 200px;
         --text-padding 10px;
         }
         
@@ -21,7 +21,7 @@
             width: var( --wide-text);
             width: 200px;
             border-style: solid;
-            padding: 10px;
+            padding: var(--text-padding);
         }
         
     </style>
