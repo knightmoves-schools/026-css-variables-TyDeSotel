@@ -8,18 +8,22 @@
         --wide-text-size: 200px;
         --text-padding 10px;
         }
+
+        @media (max-width: 150px) {
+            :root {
+                --wide-text-size: 180px;
+            }
+        }
         
         .narrow-text {
-           width: var( --narrow-text);
-            --narrow-text: width: 120px; 
-            width: 150px;
+           width: var(--narrow-text-size);
             border-style: solid;
-            padding: 10px;
+            padding: var(--text-padding);
+            --narrow-text-size: 120px; 
         }
 
         .wide-text {
             width: var( --wide-text);
-            width: 200px;
             border-style: solid;
             padding: var(--text-padding);
         }
